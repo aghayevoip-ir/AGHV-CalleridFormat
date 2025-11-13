@@ -12,7 +12,7 @@ Caller number correction, suitable for local landlines in Iran: Sometimes, incom
 ## 1. دستور زیر را بر روی کنسول لینوکس ایزابل خود اجرا کنید.
 ```bash
 # Simple automatic installation:
-curl -L -o AghayeVOIPCalleridFormatter.zip https://github.com/aghayevoip-ir/AGHV-CalleridFormat/archive/master.zip && unzip AghayeVOIPCalleridFormatter.zip && cd AGHV-CalleridFormat-main && sudo bash install-simple.sh
+curl -L -o AghayeVOIPCalleridFormatter.zip https://github.com/aghayevoip-ir/AGHV-CalleridFormat/archive/master.zip && unzip AghayeVOIPCalleridFormatter.zip && cd AGHV-CalleridFormat-master && sudo bash install-simple.sh
 ```
 
 
