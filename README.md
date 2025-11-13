@@ -10,8 +10,9 @@ Caller number correction, suitable for local landlines in Iran: Sometimes, incom
 #1. run on your Linux CLI.
 
 ## 1. دستور زیر را بر روی کنسول لینوکس ایزابل خود اجرا کنید.
-```
-curl -L -o AghayeVOIPCalleridFormatter.zip https://github.com/aghayevoip-ir/AGHV-CalleridFormat/archive/master.zip && unzip AghayeVOIPCalleridFormatter.zip && cd AGHV-CalleridFormat-main && chmod 755 install.sh && ./install.sh -y
+```bash
+# Simple automatic installation:
+curl -L -o AghayeVOIPCalleridFormatter.zip https://github.com/aghayevoip-ir/AGHV-CalleridFormat/archive/master.zip && unzip AghayeVOIPCalleridFormatter.zip && cd AGHV-CalleridFormat-main && sudo bash install-simple.sh
 ```
 
 
