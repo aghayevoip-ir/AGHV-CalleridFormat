@@ -15,10 +15,26 @@ curl -L -o AghayeVOIPCalleridFormatter.zip https://github.com/aghayevoip-ir/AGHV
 ```
 
 
-#2. Change the Trunk incoming context to   context=to-cidformatter
+#2. Automatic Installation - No Trunk Context Change Required!
 
-## 2. در تعریف ترانک ورودی شهری خود 
-## کانتکس پیش فرض رابه context=to-cidformatter تغییر دهد.
+## 2. نصب خودکار - بدون نیاز به تغییر کانتکس ترانک!
+
+The installer automatically adds the formatter to your Asterisk system without requiring any manual trunk configuration changes.
+
+نصب کننده به صورت خودکار فرمت کننده را به سیستم استریسک اضافه می کند بدون نیاز به تغییر دستی تنظیمات ترانک.
+
+### How it works (نحوه کار):
+The installer automatically:
+1. Copies the formatter configuration to `/etc/asterisk/extensions_aghayevoip_numberformatter.conf`
+2. Includes it in `extensions_custom.conf`
+3. Creates a `to-cidformatter` context that processes calls before routing
+4. Your trunk context remains unchanged - calls are automatically processed!
+
+نصب کننده به صورت خودکار:
+1. فایل پیکربندی فرمت کننده را به `/etc/asterisk/extensions_aghayevoip_numberformatter.conf` کپی می‌کند
+2. آن را در `extensions_custom.conf` قرار می‌دهد
+3. یک کانتکس `to-cidformatter` ایجاد می‌کند که تماس‌ها را قبل از مسیریابی پردازش می‌کند
+4. کانتکس ترانک شما بدون تغییر باقی می‌ماند - تماس‌ها به صورت خودکار پردازش می‌شوند!
 
 ## Give a Star! ⭐ یک ستاره با ما بدهید
 If you like this AghayeVOIP project or plan to use it in the future, please give it a star. Thanks 🙏
