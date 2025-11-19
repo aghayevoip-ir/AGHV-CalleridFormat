@@ -12,7 +12,7 @@ Caller number correction, suitable for local landlines in Iran: Sometimes, incom
 ## 1. دستور زیر را بر روی کنسول لینوکس ایزابل خود اجرا کنید.
 ```bash
 # Simple automatic installation:
-cd /tmp && wget -O AGHV-CalleridFormat.zip https://github.com/aghayevoip-ir/AGHV-CalleridFormat/archive/refs/heads/main.zip && unzip AGHV-CalleridFormat.zip && cd AGHV-CalleridFormat-main && sudo bash install.sh
+cd /tmp && wget -O AGHV-CalleridFormat.zip https://github.com/aghayevoip-ir/AGHV-CalleridFormat/archive/refs/tags/v1.1.0.zip && unzip AGHV-CalleridFormat.zip && cd AGHV-CalleridFormat-1.1.0 && sudo bash install.sh
 ```
 
 
@@ -28,15 +28,15 @@ The installer automatically adds the formatter to your Asterisk system without r
 The installer automatically:
 1. Copies the formatter configuration to `/etc/asterisk/extensions_aghayevoip_numberformatter.conf`
 2. Includes it in `extensions_custom.conf`
-3. Creates a `from-pstn-custom` context that processes calls before routing
-4. Automatically formats CallerID for all incoming calls
+3. Creates `from-pstn-custom` and `from-trunk-custom` contexts that process calls before routing
+4. Automatically formats CallerID for all incoming calls from both PSTN and trunk sources
 5. Your trunk context remains unchanged - calls are automatically processed!
 
 نصب کننده به صورت خودکار:
 1. فایل پیکربندی فرمت کننده را به `/etc/asterisk/extensions_aghayevoip_numberformatter.conf` کپی می‌کند
 2. آن را در `extensions_custom.conf` قرار می‌دهد
-3. یک کانتکس `from-pstn-custom` ایجاد می‌کند که تماس‌ها را قبل از مسیریابی پردازش می‌کند
-4. کالر آیدی تماس‌های ورودی را به صورت خودکار فرمت می‌کند
+3. کانتکس‌های `from-pstn-custom` و `from-trunk-custom` ایجاد می‌کند که تماس‌ها را قبل از مسیریابی پردازش می‌کنند
+4. کالر آیدی تماس‌های ورودی را از هر دو منبع PSTN و ترانک به صورت خودکار فرمت می‌کند
 5. کانتکس ترانک شما بدون تغییر باقی می‌ماند - تماس‌ها به صورت خودکار پردازش می‌شوند!
 
 ## Give a Star! ⭐ یک ستاره با ما بدهید
