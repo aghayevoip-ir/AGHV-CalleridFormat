@@ -18,7 +18,7 @@ echo -e "${MAGENTA}#############################################################
 echo -e "${MAGENTA}                    https://aghayevoip.ir                    ${NC}"
 echo -e "${MAGENTA}###############################################################${NC}"
 echo ""
-echo "Install AghayeVOIP CallerID Formatter - Updated"
+echo "Install AghayeVOIP CallerID Formatter - Final Version"
 echo "aghayevoip.ir"
 echo "AghayeVOIP Panel 1.0"
 echo ""
