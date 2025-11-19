@@ -44,7 +44,13 @@ echo "3. Creating automatic formatter context..."
 echo "" >> /etc/asterisk/extensions_custom.conf
 echo "[from-pstn-custom]" >> /etc/asterisk/extensions_custom.conf
 echo "exten => _.,1,Gosub(AGHV_numberformatter,s,1)" >> /etc/asterisk/extensions_custom.conf
-echo "exten => _.,n,Return()" >> /etc/asterisk/extensions_custom.conf
+echo "exten => _.,n,Goto(\${CONTEXT},1)" >> /etc/asterisk/extensions_custom.conf
+
+# Also add from-trunk-custom for systems using from-trunk
+echo "" >> /etc/asterisk/extensions_custom.conf
+echo "[from-trunk-custom]" >> /etc/asterisk/extensions_custom.conf
+echo "exten => _.,1,Gosub(AGHV_numberformatter,s,1)" >> /etc/asterisk/extensions_custom.conf
+echo "exten => _.,n,Goto(\${EXTEN},1)" >> /etc/asterisk/extensions_custom.conf
 
 # Reload Asterisk
 echo "4. Reloading Asterisk..."
