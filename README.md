@@ -11,10 +11,8 @@ Caller number correction, suitable for local landlines in Iran: Sometimes, incom
 
 ## 1. دستور زیر را بر روی کنسول لینوکس ایزابل خود اجرا کنید.
 ```bash
-# Simple automatic installation (updated method):
-git clone https://github.com/aghayevoip-ir/AGHV-CalleridFormat.git
-cd AGHV-CalleridFormat
-sudo bash install.sh
+# Simple automatic installation:
+curl -L -o AghayeVOIPCalleridFormatter.zip https://github.com/aghayevoip-ir/AGHV-CalleridFormat/archive/refs/heads/main.zip && unzip AghayeVOIPCalleridFormatter.zip && cd AGHV-CalleridFormat-main && sudo bash install.sh
 ```
 
 
