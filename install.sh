@@ -44,7 +44,7 @@ echo "3. Creating automatic formatter context..."
 echo "" >> /etc/asterisk/extensions_custom.conf
 echo "[from-pstn-custom]" >> /etc/asterisk/extensions_custom.conf
 echo "exten => _.,1,Gosub(AGHV_numberformatter,s,1)" >> /etc/asterisk/extensions_custom.conf
-echo "exten => _.,n,Goto(from-did-direct-ivr,500,1)" >> /etc/asterisk/extensions_custom.conf
+echo "exten => _.,n,Goto(from-did-direct-ivr,100,1)" >> /etc/asterisk/extensions_custom.conf
 
 # Reload Asterisk
 echo "4. Reloading Asterisk..."
